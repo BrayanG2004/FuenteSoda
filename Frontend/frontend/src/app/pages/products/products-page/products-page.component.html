@@ -1,0 +1,103 @@
+<div class="flex h-full">
+    <fnd-menu> </fnd-menu>
+    <div class="grid grid-cols-12 w-full auto-rows-max gap-4 py-4 px=8">
+        
+        <div class="grid col-span-12">
+            <h1>Productos</h1>
+        </div>
+        <div class="grid col-span-12">
+
+            <div class="overflow-x-auto">
+                <table class="table table-xs">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>Name</th>
+                      <th>GUID</th>
+                      <th>Fecha Creación</th>
+                      <th>Fecha Actualización</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let d of data">
+                     <td>{{ d.id }}</td>
+                     <td>{{ d.name }}</td>
+                     <td>{{ d.guid  }}</td>
+                     <td>{{ d.createdDate }}</td>
+                     <td>{{ d.updatedDate  }}</td>
+                    </tr>
+                    <!-- Fila 1 - Licor -->
+                   <!--
+                    <tr>
+                      <td>1</td>
+                      <td>Licor de Naranja</td>
+                      <td>abc12345</td>
+                      <td>2023-08-12</td>
+                      <td>2024-11-28</td>
+                    </tr>
+                    Fila 2 - Refresco 
+                    <tr>
+                      <td>2</td>
+                      <td>Refresco de Cola</td>
+                      <td>xyz67890</td>
+                      <td>2023-06-05</td>
+                      <td>2024-11-28</td>
+                    </tr>
+                     Fila 3 - Cóctel 
+                    <tr>
+                      <td>3</td>
+                      <td>Cóctel Mojito</td>
+                      <td>cocktail54321</td>
+                      <td>2024-02-20</td>
+                      <td>2024-11-28</td>
+                    </tr>
+                     Fila 4 - Licor 
+                    <tr>
+                      <td>4</td>
+                      <td>Licor de Fresa</td>
+                      <td>licor23456</td>
+                      <td>2024-03-10</td>
+                      <td>2024-11-28</td>
+                    </tr>
+                     Fila 5 - Refresco 
+                    <tr>
+                      <td>5</td>
+                      <td>Refresco de Limonada</td>
+                      <td>lemonade12345</td>
+                      <td>2023-12-01</td>
+                      <td>2024-11-28</td>
+                    </tr>
+                     Fila 6 - Cóctel 
+                    <tr>
+                      <td>6</td>
+                      <td>Cóctel Piña Colada</td>
+                      <td>cocktail98765</td>
+                      <td>2024-05-25</td>
+                      <td>2024-11-28</td>
+                    </tr>
+                     Fila 7 - Licor 
+                    <tr>
+                      <td>7</td>
+                      <td>Vodka</td>
+                      <td>vodka98765</td>
+                      <td>2024-01-15</td>
+                      <td>2024-11-28</td>
+                    </tr>
+                     Fila 8 - Refresco 
+                    <tr>
+                      <td>8</td>
+                      <td>Gaseosa de Manzana</td>
+                      <td>apple-soda54321</td>
+                      <td>2023-11-10</td>
+                      <td>2024-11-28</td>
+                    </tr>
+                -->
+                  </tbody>
+                  <tfoot>
+                  </tfoot>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>
